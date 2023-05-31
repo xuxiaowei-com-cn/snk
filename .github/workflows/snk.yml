@@ -16,6 +16,9 @@ jobs:
 
     steps:
 
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       - uses: Platane/snk@v2
         with:
           # github user name to read the contribution graph from (**required**)
