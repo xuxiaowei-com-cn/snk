@@ -3,6 +3,9 @@ name: "Snk"
 on:
   push:
     branches: [ "main" ]
+  schedule:
+    # 每天UTC时间00:00执行
+    - cron: '0 0 * * *'
 
 jobs:
   snk:
